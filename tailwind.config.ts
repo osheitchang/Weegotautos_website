@@ -11,8 +11,18 @@ const config: Config = {
   ],
   theme: {
     colors: {
-      'primary': '#cd4e64',
-      'secondary': '#2d2641',
+      primary: '#cd4e64',
+      secondary: '#2d2641',
+    },
+    fontfamily:{
+      sans: "Montserrat"
+    },
+    screen: {
+        'sm': '640px',
+        'md': '768px',
+        'lg': '1024px',
+        'xl': '1280px',
+        '2xl': '1536px',
     },
     extend: {
       backgroundImage: {
