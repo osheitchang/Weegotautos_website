@@ -45,7 +45,7 @@ export default function Hero() {
                             >
                                 Agendar asesoría
                             </a>
-                            <a href="#" className="text-sm font-semibold leading-6 text-white">
+                            <a href="/aboutUs" className="text-sm font-semibold leading-6 text-white">
                                 conocer mas <span aria-hidden="true">→</span>
                             </a>
                         </div>
