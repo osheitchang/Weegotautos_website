@@ -16,12 +16,22 @@ import {
   FingerPrintIcon,
   LockClosedIcon,
   ServerIcon,
+  BoltIcon,
+  ChatBubbleBottomCenterIcon,
+  TruckIcon,
+  UserCircleIcon,
+  DevicePhoneMobileIcon,
+  CubeTransparentIcon,
 } from "@heroicons/react/20/solid";
 import Testimonials from "./components/Testimonials";
 import Hero from "./components/Hero";
 
+
+
+
+
 const navigation = [
-  { name: "Servicios", href: "#" },
+  { name: "Servicios", href: "#service" },
   { name: "Compania", href: "#" },
   { name: "Blog", href: "#" },
   { name: "Contacto", href: "#" },
@@ -31,58 +41,58 @@ const features = [
     name: "Asesoría Integral.",
     description:
       "Para nosotros es importante explicar todos los aspectos de la compra de auto para que nuestros clientes puedan tomar la mejor decision a la hora de comprar.",
-    icon: CloudArrowUpIcon,
+    icon: BoltIcon,
   },
   {
     name: "Gestión Completa.",
     description:
       "Sabemos que ir a un concesionario implica comprometer tiempo que pudieras usar en otras cosas, por eso ofrecemos un servicio que abarca todo el proceso de compra para que no tengas que pasar ni un minuto negociando o esperando por aprobación.",
-    icon: LockClosedIcon,
+    icon: ChatBubbleBottomCenterIcon,
   },
   {
     name: "Atención Personalizada.",
     description:
       "Atención personalizada que se centra en sus requerimientos únicos, proporcionando soporte y soluciones diseñados específicamente para usted.",
-    icon: ArrowPathIcon,
+    icon: UserCircleIcon,
   },
   {
     name: "Entrega a la puerta de tu casa.",
     description:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit aute id magna.",
-    icon: FingerPrintIcon,
+    icon: TruckIcon,
   },
   {
     name: "Proceso Transparente.",
     description:
       "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.",
-    icon: Cog6ToothIcon,
+    icon: CubeTransparentIcon,
   },
   {
     name: "Disponibilidad 24/7",
     description:
       "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. ",
-    icon: ServerIcon,
+    icon: DevicePhoneMobileIcon,
   },
 ];
 
 const featuresSecond = [
   {
-    name: "Push to deploy.",
+    name: "Asesoría.",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit aute id magna.",
-    icon: CloudArrowUpIcon,
+      "Escoge el vehículo que mejor se adapte a tus necesidades.",
+    icon: BoltIcon,
   },
   {
-    name: "SSL certificates.",
+    name: "Gestión.",
     description:
-      "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.",
-    icon: LockClosedIcon,
+      "Sigue con tu día a día sabiendo que te tenemos cubierto en todo el trámite del auto.",
+    icon: ChatBubbleBottomCenterIcon,
   },
   {
-    name: "Database backups.",
+    name: "Entrega.",
     description:
-      "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus.",
-    icon: ServerIcon,
+      "Recibe tu auto en la puerta de tu casa y sin tener que haber ido a un concesionario.",
+    icon: TruckIcon,
   },
 ];
 
@@ -196,15 +206,19 @@ const footerNavigation = {
 };
 
 const stats = [
-  { label: "Founded", value: "2021" },
-  { label: "Employees", value: "37" },
-  { label: "Countries", value: "12" },
-  { label: "Raised", value: "$25M" },
+  { label: "Entregas", value: "1000+" },
+  { label: "Marcas", value: "23" },
+  { label: "Ciudades", value: "37" },
+  { label: "Aprobacion", value: "86%" },
 ];
+
+
+
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
+
 
 export default function Example() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -237,7 +251,8 @@ export default function Example() {
               <Bars3Icon className="h-6 w-6" aria-hidden="true" />
             </button>
           </div>
-          <div className="hidden lg:flex lg:gap-x-12">
+          {/*Navbar disabled */}
+          {/* <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
               <a
                 key={item.name}
@@ -247,12 +262,13 @@ export default function Example() {
                 {item.name}
               </a>
             ))}
-          </div>
-          <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+          </div> */}
+          {/*Log in option */}
+          {/* <div className="hidden lg:flex lg:flex-1 lg:justify-end">
             <a href="#" className="text-sm font-semibold leading-6 text-white">
               Log in <span aria-hidden="true">&rarr;</span>
             </a>
-          </div>
+          </div> */}
         </nav>
         <Dialog
           as="div"
@@ -380,7 +396,7 @@ export default function Example() {
                     Compra con confianza
                   </p>
                   <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                    Transaccion transparente hasta el final
+                    Transacción transparente hasta el final
                   </h1>
                   <div className="max-w-xl">
                     <p className="mt-6">
@@ -422,7 +438,7 @@ export default function Example() {
                     </div>
                   ))}
                 </dl>
-                <div className="mt-10 flex">
+                {/* <div className="mt-10 flex">
                   <a
                     href="#"
                     className="text-base font-semibold leading-7 text-indigo-600"
@@ -430,26 +446,24 @@ export default function Example() {
                     Learn more about our company{" "}
                     <span aria-hidden="true">&rarr;</span>
                   </a>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
         </div>
         {/* Sub section */}
-        <div className="bg-white py-24">
+        <div className="bg-white py-24" id="service">
           <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
             <div className="relative isolate overflow-hidden bg-gray-900 px-6 py-20 sm:rounded-3xl sm:px-10 sm:py-24 lg:py-24 xl:px-24">
               <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-center lg:gap-y-0">
                 <div className="lg:row-start-2 lg:max-w-md">
                   <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-                    Boost your productivity.
+                    Una servicio completamente
                     <br />
-                    Start using our app today.
+                    "Manos libre"
                   </h2>
                   <p className="mt-6 text-lg leading-8 text-gray-300">
-                    Ac euismod vel sit maecenas id pellentesque eu sed
-                    consectetur. Malesuada adipiscing sagittis vel nulla. Ac
-                    euismod vel sit maecenas.
+                    Esto significa que la gestión que recibes va más allá de solo guiarte hacia la mejor opción, sino que nos encargamos de todo, desde ayudarte a elegir hasta el momento en que hacemos la entrega.
                   </p>
                 </div>
                 <img
@@ -461,11 +475,11 @@ export default function Example() {
                 />
                 <div className="max-w-xl lg:row-start-3 lg:mt-10 lg:max-w-md lg:border-t lg:border-white/10 lg:pt-10">
                   <dl className="max-w-xl space-y-8 text-base leading-7 text-gray-300 lg:max-w-none">
-                    {features.map((feature) => (
+                    {featuresSecond.map((feature) => (
                       <div key={feature.name} className="relative">
                         <dt className="ml-9 inline-block font-semibold text-white">
                           <feature.icon
-                            className="absolute left-1 top-1 h-5 w-5 text-indigo-500"
+                            className="absolute left-1 top-1 h-5 w-5 text-[#cd4e64]"
                             aria-hidden="true"
                           />
                           {feature.name}
@@ -492,14 +506,14 @@ export default function Example() {
           </div>
         </div>
         {/* Feature section */}
-        <div className="mt-32 sm:mt-56">
+        <div className="mt-32 sm:mt-56" id="feature_1">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto max-w-2xl sm:text-center">
               <h2 className="text-base font-semibold leading-7 text-[#cd4e64]">
                 Un proceso simplificado
               </h2>
               <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-                Elige - despreocupate - disfuta
+                En manos de expertos
               </p>
               <p className="mt-6 text-lg leading-8 text-gray-600">
                 Creamos un proceso de compra totalmente diferente al modo
@@ -595,25 +609,6 @@ export default function Example() {
           </div>
         </div>
         <Testimonials />
-
-        {/* New section here */}
-
-        <div className="bg-white px-6 py-24 sm:py-32 lg:px-8">
-          <div className="mx-auto max-w-2xl text-center">
-            <p className="text-base font-semibold leading-7 text-indigo-600">
-              Get the help you need
-            </p>
-            <h2 className="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-              Support center
-            </h2>
-            <p className="mt-6 text-lg leading-8 text-gray-600">
-              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-              lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
-              fugiat aliqua.
-            </p>
-          </div>
-        </div>
-
         {/* FAQ section */}
         <div className="mx-auto mt-32 max-w-7xl px-6 sm:mt-56 lg:px-8">
           <div className="mx-auto max-w-4xl divide-y divide-gray-900/10">
@@ -658,63 +653,44 @@ export default function Example() {
           </div>
         </div>
         {/* CTA */}
-        <div className="overflow-hidden bg-white py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:flex lg:px-8">
-        <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-12 gap-y-16 lg:mx-0 lg:min-w-full lg:max-w-none lg:flex-none lg:gap-y-8">
-          <div className="lg:col-end-1 lg:w-full lg:max-w-lg lg:pb-8">
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Our people</h2>
-            <p className="mt-6 text-xl leading-8 text-gray-600">
-              Quasi est quaerat. Sit molestiae et. Provident ad dolorem occaecati eos iste. Soluta rerum quidem minus ut
-              molestiae velit error quod. Excepturi quidem expedita molestias quas.
-            </p>
-            <p className="mt-6 text-base leading-7 text-gray-600">
-              Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet
-              fugiat veniam occaecat fugiat. Quasi aperiam sit non sit neque reprehenderit.
-            </p>
-            <div className="mt-10 flex">
-              <a
-                href="#"
-                className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+
+        <div className="bg-white mt-28">
+          <div className="mx-auto max-w-7xl py-24 sm:px-6 sm:py-32 lg:px-8 ">
+            <div className="relative isolate overflow-hidden bg-gray-900 px-6 py-24 text-center shadow-2xl sm:rounded-3xl sm:px-16">
+              <h2 className="mx-auto max-w-2xl text-3xl font-bold tracking-tight text-white sm:text-4xl">
+                Obtén una asesoría gratuita hoy
+              </h2>
+              <p className="mx-auto mt-6 max-w-xl text-lg leading-8 text-gray-300">
+                Recibe toda la información que necesitas para obtener el mejor negocio posible en tu próximo auto.
+              </p>
+              <div className="mt-10 flex items-center justify-center gap-x-6">
+                <a
+                  href="#"
+                  className="rounded-md bg-[#cd4e64] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
+                >
+                  Obtener Asesoría
+                </a>
+                <a href="#" className="text-sm font-semibold leading-6 text-white">
+                  Más información <span aria-hidden="true">→</span>
+                </a>
+              </div>
+              <svg
+                viewBox="0 0 1024 1024"
+                className="absolute left-1/2 top-1/2 -z-10 h-[64rem] w-[64rem] -translate-x-1/2 [mask-image:radial-gradient(closest-side,white,transparent)]"
+                aria-hidden="true"
               >
-                Join our team <span aria-hidden="true">&rarr;</span>
-              </a>
-            </div>
-          </div>
-          <div className="flex flex-wrap items-start justify-end gap-6 sm:gap-8 lg:contents">
-            <div className="w-0 flex-auto lg:ml-auto lg:w-auto lg:flex-none lg:self-end">
-              <img
-                src="https://images.unsplash.com/photo-1670272502246-768d249768ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1152&q=80"
-                alt=""
-                className="aspect-[7/5] w-[37rem] max-w-none rounded-2xl bg-gray-50 object-cover"
-              />
-            </div>
-            <div className="contents lg:col-span-2 lg:col-end-2 lg:ml-auto lg:flex lg:w-[37rem] lg:items-start lg:justify-end lg:gap-x-8">
-              <div className="order-first flex w-64 flex-none justify-end self-end lg:w-auto">
-                <img
-                  src="https://images.unsplash.com/photo-1605656816944-971cd5c1407f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=768&h=604&q=80"
-                  alt=""
-                  className="aspect-[4/3] w-[24rem] max-w-none flex-none rounded-2xl bg-gray-50 object-cover"
-                />
-              </div>
-              <div className="flex w-96 flex-auto justify-end lg:w-auto lg:flex-none">
-                <img
-                  src="https://images.unsplash.com/photo-1568992687947-868a62a9f521?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1152&h=842&q=80"
-                  alt=""
-                  className="aspect-[7/5] w-[37rem] max-w-none flex-none rounded-2xl bg-gray-50 object-cover"
-                />
-              </div>
-              <div className="hidden sm:block sm:w-0 sm:flex-auto lg:w-auto lg:flex-none">
-                <img
-                  src="https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=768&h=604&q=80"
-                  alt=""
-                  className="aspect-[4/3] w-[24rem] max-w-none rounded-2xl bg-gray-50 object-cover"
-                />
-              </div>
+                <circle cx={512} cy={512} r={512} fill="url(#827591b1-ce8c-4110-b064-7cb85a0b1217)" fillOpacity="0.7" />
+                <defs>
+                  <radialGradient id="827591b1-ce8c-4110-b064-7cb85a0b1217">
+                    <stop stopColor="#cd4e64" />
+                    <stop offset={1} stopColor="#E935C1" />
+                  </radialGradient>
+                </defs>
+              </svg>
             </div>
           </div>
         </div>
-      </div>
-    </div>
+
       </main>
 
       {/* Footer */}
@@ -732,7 +708,7 @@ export default function Example() {
               src="../assets/images/Logo-Weegot-white.png"
               alt="Weegot Autos"
             />
-            <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
+            {/* <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
               <div className="md:grid md:grid-cols-2 md:gap-8">
                 <div>
                   <h3 className="text-sm font-semibold leading-6 text-white">
@@ -805,7 +781,7 @@ export default function Example() {
                   </ul>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </footer>

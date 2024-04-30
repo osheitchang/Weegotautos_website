@@ -24,16 +24,16 @@ export default function Hero() {
                 <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
                     <div className="hidden sm:mb-8 sm:flex sm:justify-center">
                         <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-400 ring-1 ring-white/10 hover:ring-white/20">
-                            Announcing our next round of funding.{' '}
+                            Conoce los especiales del mes.{' '}
                             <a href="#" className="font-semibold text-white">
                                 <span className="absolute inset-0" aria-hidden="true" />
-                                Read more <span aria-hidden="true">&rarr;</span>
+                                {' '} Más información <span aria-hidden="true">&rarr;</span>
                             </a>
                         </div>
                     </div>
                     <div className="text-center">
                         <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-                            Ahorra tiempo y dinero en tu proximo auto nuevo
+                        Ahorra tiempo y dinero en tu próximo auto nuevo
                         </h1>
                         <p className="mt-6 text-lg leading-8 text-gray-300">
                         Hacemos que la compra de tu auto sea un proceso fácil: <span className="font-extrabold">solo elige el auto que quieras y nosotros nos encargamos del resto.</span>
@@ -45,8 +45,8 @@ export default function Hero() {
                             >
                                 Agendar asesoría
                             </a>
-                            <a href="/aboutUs" className="text-sm font-semibold leading-6 text-white">
-                                conocer mas <span aria-hidden="true">→</span>
+                            <a href="#feature_1" className="text-sm font-semibold leading-6 text-white">
+                            Conocer más <span aria-hidden="true">→</span>
                             </a>
                         </div>
                     </div>
