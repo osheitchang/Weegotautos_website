@@ -220,7 +220,7 @@ function classNames(...classes) {
 }
 
 
-export default function Example() {
+export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
