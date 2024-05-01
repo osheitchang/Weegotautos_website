@@ -4,7 +4,7 @@ const featuredTestimonial = {
     name: "Mariana B.",
     handle: "marianalifeinsurance",
     imageUrl:
-      "../assets/images/marianaPicture.jpg",
+      "../assets/images/marianaPicture.png",
     logoUrl: "https://tailwindui.com/img/logos/savvycal-logo-gray-900.svg",
   },
 };

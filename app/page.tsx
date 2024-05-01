@@ -573,7 +573,7 @@ export default function Home() {
               <div className="relative aspect-[2/1] h-full md:-mx-8 xl:mx-0 xl:aspect-auto">
                 <img
                   className="absolute inset-0 h-full w-full rounded-2xl bg-gray-800 object-cover shadow-2xl"
-                  src="../assets/images/delivery.jpg"
+                  src="../assets/images/delivery.png"
                   alt="Car delivery Weegot"
                 />
               </div>
