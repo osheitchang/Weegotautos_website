@@ -1,10 +1,11 @@
 import react from 'react';
+import weegotHero from '../../public/assets/images/weegot-hero.jpg'
 
 export default function Hero() {
     return (
         <div className="relative isolate overflow-hidden bg-gray-900 pb-16 pt-14 sm:pb-20">
             <img
-                src={"../assets/images/weegot-hero.jpg"}
+                src={`${weegotHero}`}
                 alt=""
                 className="absolute inset-0 -z-10 h-full w-full object-cover opacity-100 mix-blend-multiply"
             />
