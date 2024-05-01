@@ -367,7 +367,7 @@ export default function Home() {
                       />
                     </svg>
                     <img
-                      src="/assets/images/Logo-weegot-white.png"
+                      src="../assets/images/Logo-weegot-white.png"
                       alt=""
                       className="h-12 w-auto"
                     />
@@ -574,7 +574,7 @@ export default function Home() {
                 <img
                   className="absolute inset-0 h-full w-full rounded-2xl bg-gray-800 object-cover shadow-2xl"
                   src="../assets/images/delivery.jpg"
-                  alt=""
+                  alt="Car delivery Weegot"
                 />
               </div>
             </div>
