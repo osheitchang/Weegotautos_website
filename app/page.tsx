@@ -25,7 +25,7 @@ import {
 } from "@heroicons/react/20/solid";
 import Testimonials from "./components/Testimonials";
 import Hero from "./components/Hero";
-
+import Image from 'next/image';
 
 
 
@@ -234,9 +234,11 @@ export default function Home() {
           <div className="flex lg:flex-1">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="sr-only">Weegot Autos</span>
-              <img
+              <Image
                 className="h-8 w-auto fill-white stroke-white"
-                src="../assets/images/logo-weegot-white.png"
+                src="/assets/images/logo-weegot-white.png"
+                width={158}
+                height={48}
                 alt=""
               />
             </a>
@@ -253,7 +255,7 @@ export default function Home() {
               <Bars3Icon className="h-6 w-6" aria-hidden="true" />
             </button>
           </div> */}
-          
+
           {/*Navbar disabled */}
           {/* <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
