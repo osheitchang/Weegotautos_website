@@ -77,7 +77,7 @@ export default function Hero() {
                     />
                     <img
                         className="col-span-2 max-h-24 w-full object-contain sm:col-start-2 lg:col-span-1"
-                        src="../assets/images/lexus-logo.png"
+                        src="../assets/images/lexus-logo.png" 
                         alt="Lexus Logo"
                         width={158}
                         height={48}
