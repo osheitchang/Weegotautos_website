@@ -4,7 +4,7 @@ export default function Hero() {
     return (
         <div className="relative isolate overflow-hidden bg-gray-900 pb-16 pt-14 sm:pb-20">
             <img
-                src="../assets/images/weegot-hero.jpg"
+                src={"../assets/images/weegot-hero.jpg"}
                 alt=""
                 className="absolute inset-0 -z-10 h-full w-full object-cover opacity-100 mix-blend-multiply"
             />
@@ -56,35 +56,35 @@ export default function Hero() {
                 <div className="mx-auto grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5 lg:-mt-4 lg:mb-4">
                     <img
                         className="col-span-2 max-h-14 w-full object-contain lg:col-span-1"
-                        src="../assets/images/toyota-logo.png"
+                        src={"../assets/images/toyota-logo.png"}
                         alt="Toyota Logo"
                         width={158}
                         height={48}
                     />
                     <img
                         className="col-span-2 max-h-14 w-full object-contain lg:col-span-1"
-                        src="../assets/images/nissan-logo.png"
+                        src={"../assets/images/nissan-logo.png"}
                         alt="Nissan Logo"
                         width={158}
                         height={48}
                     />
                     <img
                         className="col-span-2 max-h-14 w-full object-contain lg:col-span-1"
-                        src="../assets/images/honda-logo.png"
+                        src={"../assets/images/honda-logo.png"}
                         alt="Honda Logo"
                         width={158}
                         height={48}
                     />
                     <img
                         className="col-span-2 max-h-24 w-full object-contain sm:col-start-2 lg:col-span-1"
-                        src="../assets/images/lexus-logo.png" 
+                        src={"../assets/images/lexus-logo.png"} 
                         alt="Lexus Logo"
                         width={158}
                         height={48}
                     />
                     <img
                         className="col-span-2 col-start-2 max-h-24 w-full object-contain sm:col-start-auto lg:col-span-1"
-                        src="../assets/images/hyundai-logo.png"
+                        src={"../assets/images/hyundai-logo.png"}
                         alt="Hyundai Logo"
                         width={158}
                         height={48}

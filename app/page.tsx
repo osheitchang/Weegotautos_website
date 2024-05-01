@@ -573,7 +573,7 @@ export default function Example() {
               <div className="relative aspect-[2/1] h-full md:-mx-8 xl:mx-0 xl:aspect-auto">
                 <img
                   className="absolute inset-0 h-full w-full rounded-2xl bg-gray-800 object-cover shadow-2xl"
-                  src="../assets/images/Delivery.jpg"
+                  src="../assets/images/delivery.jpg"
                   alt=""
                 />
               </div>
@@ -594,10 +594,7 @@ export default function Example() {
                 </svg>
                 <blockquote className="text-xl font-semibold leading-8 text-white sm:text-2xl sm:leading-9">
                   <p>
-                    Realmente hacen el proceso muy facil a la hora comprar. Ya
-                    he tenido malas experiencias a la hora comprar y el hecho de
-                    que ellos se encarguen de todo el proceso hace que toda la
-                    transaccion sea muy comoda.
+                    Realmente hacen el proceso muy fácil a la hora de comprar. Ya he tenido malas experiencias a la hora de comprar y el hecho de que ellos se encarguen de todo el proceso hace que toda la transacción sea muy cómoda.
                   </p>
                 </blockquote>
                 <figcaption className="mt-8 text-base">
