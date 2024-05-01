@@ -241,7 +241,9 @@ export default function Home() {
               />
             </a>
           </div>
-          <div className="flex lg:hidden">
+          {/*Mobile navbar */}
+
+          {/* <div className="flex lg:hidden">
             <button
               type="button"
               className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-400"
@@ -250,7 +252,8 @@ export default function Home() {
               <span className="sr-only">Open main menu</span>
               <Bars3Icon className="h-6 w-6" aria-hidden="true" />
             </button>
-          </div>
+          </div> */}
+          
           {/*Navbar disabled */}
           {/* <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
@@ -662,7 +665,7 @@ export default function Home() {
               </p>
               <div className="mt-10 flex items-center justify-center gap-x-6">
                 <a
-                  href="#"
+                  href="https://wa.link/fkmlcu"
                   className="rounded-md bg-[#cd4e64] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-[#cd4e64]/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
                 >
                   Obtener Asesoría

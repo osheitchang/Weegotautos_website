@@ -1,11 +1,12 @@
 import react from 'react';
 import weegotHero from '../../public/assets/images/weegot-hero.jpg'
+import sample from '../assets/images/toyota-logo.png'
 
 export default function Hero() {
     return (
         <div className="relative isolate overflow-hidden bg-gray-900 pb-16 pt-14 sm:pb-20">
             <img
-                src="../assets/images/weegot-hero.png"
+                src="../assets/images/Logo-Weegot-white.png"
                 alt=""
                 className="absolute inset-0 -z-10 h-full w-full object-cover opacity-100 mix-blend-multiply"
             />
@@ -41,7 +42,7 @@ export default function Hero() {
                         </p>
                         <div className="mt-10 flex items-center justify-center gap-x-6">
                             <a
-                                href="#"
+                                href="https://wa.link/fkmlcu"
                                 className="rounded-md bg-[#cd4e64] px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-[#b4485a] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-400"
                             >
                                 Agendar asesoría
